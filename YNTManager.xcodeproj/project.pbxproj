@@ -14,6 +14,8 @@
 		7C19950B1E24D44A00FDFD9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C19950A1E24D44A00FDFD9C /* Assets.xcassets */; };
 		7C19950E1E24D44A00FDFD9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C19950C1E24D44A00FDFD9C /* LaunchScreen.storyboard */; };
 		7C1995191E24D44A00FDFD9C /* YNTManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1995181E24D44A00FDFD9C /* YNTManagerTests.m */; };
+		7C19952B1E24D47E00FDFD9C /* JudgeTypeManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1995281E24D47E00FDFD9C /* JudgeTypeManger.m */; };
+		7C19952C1E24D47E00FDFD9C /* TempArrayManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C19952A1E24D47E00FDFD9C /* TempArrayManger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		7C1995141E24D44A00FDFD9C /* YNTManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YNTManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C1995181E24D44A00FDFD9C /* YNTManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YNTManagerTests.m; sourceTree = "<group>"; };
 		7C19951A1E24D44A00FDFD9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C1995271E24D47E00FDFD9C /* JudgeTypeManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JudgeTypeManger.h; sourceTree = "<group>"; };
+		7C1995281E24D47E00FDFD9C /* JudgeTypeManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JudgeTypeManger.m; sourceTree = "<group>"; };
+		7C1995291E24D47E00FDFD9C /* TempArrayManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempArrayManger.h; sourceTree = "<group>"; };
+		7C19952A1E24D47E00FDFD9C /* TempArrayManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempArrayManger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 				7C1995021E24D44A00FDFD9C /* AppDelegate.m */,
 				7C1995041E24D44A00FDFD9C /* ViewController.h */,
 				7C1995051E24D44A00FDFD9C /* ViewController.m */,
+				7C1995231E24D45D00FDFD9C /* Manger */,
 				7C1995071E24D44A00FDFD9C /* Main.storyboard */,
 				7C19950A1E24D44A00FDFD9C /* Assets.xcassets */,
 				7C19950C1E24D44A00FDFD9C /* LaunchScreen.storyboard */,
@@ -109,6 +116,17 @@
 				7C19951A1E24D44A00FDFD9C /* Info.plist */,
 			);
 			path = YNTManagerTests;
+			sourceTree = "<group>";
+		};
+		7C1995231E24D45D00FDFD9C /* Manger */ = {
+			isa = PBXGroup;
+			children = (
+				7C1995271E24D47E00FDFD9C /* JudgeTypeManger.h */,
+				7C1995281E24D47E00FDFD9C /* JudgeTypeManger.m */,
+				7C1995291E24D47E00FDFD9C /* TempArrayManger.h */,
+				7C19952A1E24D47E00FDFD9C /* TempArrayManger.m */,
+			);
+			path = Manger;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,7 +231,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C19952C1E24D47E00FDFD9C /* TempArrayManger.m in Sources */,
 				7C1995061E24D44A00FDFD9C /* ViewController.m in Sources */,
+				7C19952B1E24D47E00FDFD9C /* JudgeTypeManger.m in Sources */,
 				7C1995031E24D44A00FDFD9C /* AppDelegate.m in Sources */,
 				7C1995001E24D44A00FDFD9C /* main.m in Sources */,
 			);

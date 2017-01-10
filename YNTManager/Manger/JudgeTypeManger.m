@@ -155,21 +155,7 @@
     }
     return str;
 }
-+ (NSString*)modelMake:(id)model
-{
-    NSString *str;
-    if ( [model isKindOfClass:[MainModel class]] ) {
-        
-        MainModel *main = (MainModel*)model;
-        str = main.name;
-    }
-    else{
-        
-        str = (NSString*)model;
-    }
 
-    return str;
-}
 - (UIImage*)placeholderImageURL:(NSURL *)imgUrl
 {
     UIImageView *bgImage = [[UIImageView alloc]init];
@@ -239,18 +225,6 @@
                             blue:(float)(blueInt_/255.0f) alpha:1.0f];
 }
 
-+(void)sendRequest:(NSMutableDictionary*)dic and:(NSString*)url
-{
-    AFHTTPSessionManager *manger = [AFHTTPSessionManager manager];
-    manger.responseSerializer.acceptableContentTypes = [manger.responseSerializer.acceptableContentTypes setByAddingObject: @"text/html"];
-    manger.responseSerializer.acceptableContentTypes = [manger.responseSerializer.acceptableContentTypes setByAddingObject: @"text/plain"];
-    [manger GET:WebBaseUrl(url) parameters:dic progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-    }];
-
-}
 
 
 @end

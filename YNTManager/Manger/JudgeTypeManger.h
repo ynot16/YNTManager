@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface JudgeTypeManger : NSObject
 
@@ -16,8 +17,6 @@
 - (UIImage*)placeholderImageURL:(NSURL *)imgUrl;
 + (UIColor *)getColor:(NSString *) hexColor;
 + (NSString *)upperCase:(NSString *) str;
-+ (NSString*)modelMake:(id)model;
-+(void)sendRequest:(NSMutableDictionary*)dic and:(NSString*)url;
 //判断字符为空
 + (NSString*)isBlankString:(NSString *)string ;
 
